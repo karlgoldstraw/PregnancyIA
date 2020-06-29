@@ -1,0 +1,105 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-pregnancy.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Pregnancy-related conditions and changes to your body - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+    <section class="nhsuk-section nhsuk-u-padding-top-4">
+      <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full nhsuk-section__content">
+
+            <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
+              <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/MT2">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/MT2/Pregnancy">Pregnancy</a></li>
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/MT2">Home</a></p>
+                </div>
+              </nav>
+
+        <div class="nhsuk-u-reading-width">
+          <h1>
+            <span role="text">Pregnancy-related conditions and changes to your body
+              <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                <span class="nhsuk-u-visually-hidden"> - </span>
+                Pregnancy
+              </span>
+            </span>
+          </h1>
+        </div>
+
+
+
+<!-- ROW 1 -->
+            <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-margin-top-6">
+              <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                <div class="nhsuk-promo nhsuk-promo_canon">
+                  <a class="nhsuk-promo__link-wrapper" href="#">
+                    <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Common pregnancy issues and changes to your body</h3>
+                        <p class="nhsuk-promo__description">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+                    </div>
+                    {% include "includes/_arrow.njk" %}
+                  </a>
+                </div>
+              </div>
+              <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+                <div class="nhsuk-promo nhsuk-promo_canon">
+                  <a class="nhsuk-promo__link-wrapper" href="#">
+                    <div class="nhsuk-promo__content">
+                        <h3 class="nhsuk-promo__heading">Pregnancy-induced conditions</h3>
+                        <p class="nhsuk-promo__description">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+                    </div>
+                    {% include "includes/_arrow.njk" %}
+                  </a>
+                </div>
+              </div>
+            </div>
+
+<!-- ROW 2 -->
+          <div class="nhsuk-grid-row nhsuk-promo-group nhsuk-u-margin-top-6">
+            <div class="nhsuk-grid-column-one-half nhsuk-promo-group__item">
+              <div class="nhsuk-promo nhsuk-promo_canon">
+                <a class="nhsuk-promo__link-wrapper" href="#">
+                  <div class="nhsuk-promo__content">
+                      <h3 class="nhsuk-promo__heading">Managing existing health conditions in pregnancy</h3>
+                      <p class="nhsuk-promo__description">Lorem ipsum dolor sit amet, consectetur adipisici elit.</p>
+                  </div>
+                  {% include "includes/_arrow.njk" %}
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+{% endblock %}

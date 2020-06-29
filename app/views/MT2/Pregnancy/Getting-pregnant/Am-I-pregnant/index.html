@@ -1,0 +1,84 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-pregnancy.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Am I pregnant? - NHS.UK
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+
+
+    <section class="nhsuk-section nhsuk-u-padding-top-4">
+      <div class="nhsuk-width-container">
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-full nhsuk-section__content">
+
+            <main class="nhsuk-main-wrapper nhsuk-main-wrapper--no-padding nhsuk-homepage nhsuk-u-padding-top-0" id="maincontent" role="main">
+              <nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+                <div >
+                  <ol class="nhsuk-breadcrumb__list ">
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/MT2">Home</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/MT2/Pregnancy">Pregnancy</a></li>
+                    <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/MT2/Pregnancy/Getting-pregnant">Getting pregnant</a></li>
+                  </ol>
+                  <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="/MT2">Home</a></p>
+                </div>
+              </nav>
+
+        <div class="nhsuk-u-reading-width">
+          <h1>
+            <span role="text">Am I pregnant?
+              <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                <span class="nhsuk-u-visually-hidden"> - </span>
+                Pregnancy
+              </span>
+            </span>
+          </h1>
+          <p class="nhsuk-lede-text">Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Paullum deliquit, ponderibus modulisque suis ratio utitur.</p>
+        </div>
+
+
+
+<!-- ROW 1 -->
+      <article>
+        <section id="key-links" class="nhsuk-u-padding-bottom-8">
+          <ul class="nhsuk-hub-key-links">
+              <li class="nhsuk-hub-key-links__list-item">
+                <a href="#?">Doing a pregnancy test</a>
+              </li>
+              <li class="nhsuk-hub-key-links__list-item">
+                <a href="#?">Signs and symptoms of pregnancy</a>
+              </li>
+              <li class="nhsuk-hub-key-links__list-item">
+                <a href="#?">If you're not sure you want to be pregnant</a>
+              </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+{% endblock %}
